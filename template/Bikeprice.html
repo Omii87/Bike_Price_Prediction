@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Details Form</title>
+  <style>
+    body {
+      background-image: url("https://i.pinimg.com/originals/d5/58/32/d5583288892a3115f54b9398e5b571cb.jpg");
+      background-repeat: no-repeat0;
+      background-attachment: fixed;
+      background-size: 100%;
+    }
+  </style>
+</head>
+<body style="background-color: #d1d3abf4;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVmrn2hK2AtvY4b-98dxHxyuBcRfbxY2Ixg&usqp=CAU" alt="Trulli" width="500" height="333">
+
+  <h1>Bike Price Prediction </h1>
+  <form method="POST" action="/BikePrice">
+    <h2>Car Details</h2>
+
+    <label for="company">Company:</label>
+    <select id="company" name="Company" required>
+      <option value="Benelli">Benelli</option>
+      <option value="Husqvarna">Husqvarna</option>
+      <option value="Mutt Motorcycles">Mutt Motorcycles</option>
+      <option value="Victory">Victory</option>
+      <option value="Hyosung">Hyosung</option>
+      <option value="Aprilia">Aprilia</option>
+      <option value="Harley-Davidson">Harley-Davidson</option>
+      <option value="BMW">BMW</option>
+      <option value="TVS">TVS</option>
+      <option value="Royal Enfield">Royal Enfield</option>
+      <option value="Hero">Hero</option>
+      <option value="Honda">Honda</option>
+      <option value="Triumph">Triumph</option>
+      <option value="Ducati">Ducati</option>
+    
+    
+    </select><br>
+    <label for="origin">Country of Origin:</label>
+    <select id="origin" name="origin" required>
+      <option value="UK">UK</option>
+      <option value="Italy">Italy</option>
+      <option value="India">India</option>
+      <option value="China">China</option>
+      <option value="Japan">Japan</option>
+      <option value="United States">United States</option>
+      <option value="Taiwan">Taiwan</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Austria">Austria</option>
+      <option value="USA">USA</option>
+      <option value="Sweden">Sweden</option>
+      <option value="Spain">Spain</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Canada">Canada</option>
+
+    </select><br>
+
+    <label for="Model">Model:</label>
+    <select id="Model" name="Model" required>
+      <option value="Artemis">Artemis</option>
+      <option value="Meteor 350">Meteor 350</option>
+      <option value="Interceptor 650">Interceptor 650</option>
+      <option value="TS Street Hunter">TS Street Hunter</option>
+      <option value="Perak">Perak</option>
+      <option value="Jawa">Jawa</option>
+      <option value="XPulse 200T">XPulse 200T</option>
+      <option value="Crossfire 500">Crossfire 500</option>
+      <option value="Bonneville T120">Bonneville T120</option>
+      <option value="Interceptor 900">Interceptor 900</option>
+      <option value="Ninja 650">Ninja 650</option>
+      <option value="Burgman Street 125">Burgman Street 125</option>
+      <option value="Octane">Octane</option>
+      <option value="Cross Country">Cross Country</option>
+      <option value="Splendor Plus">Splendor Plus</option>
+      <option value="Apache RTR 200 4V">Apache RTR 200 4V</option>
+      <option value="300 SuperSport">300 SuperSport</option>
+      <option value="RS 650">RS 650</option>
+      <option value="RS 660">RS 660</option>
+      <option value="'MT-10">'MT-10</option>
+    </select><br>
+
+    
+    
+
+    <label for="cc">Number of cc:</label>
+    <input type="number" id="cc" name="cc" required><br>
+
+    <label for="horsepower">Horsepower:</label>
+    <input type="number" id="horsepower" name="horsepower" required><br>
+
+    <label for="transmission">Transmission Type:</label>
+    <select id="transmission" name="transmission" required>
+      <option value="Manual">Manual</option>
+      <option value="6-speed manual">6-speed manual</option>
+      <option value="Automatic">Automatic</option>
+      <option value="'5-speed manual">'5-speed manual</option>
+      <option value="5-speed">5-speed</option>
+      <option value="Five-speed constant mesh">Five-speed constant mesh</option>
+      <option value="Bafang BBS02 mid-drive motor">Bafang BBS02 mid-drive motor</option>
+      <option value="Constant Mesh">Constant Mesh</option>
+      <option value="Pedal-assist and throttle">Pedal-assist and throttle</option>
+      <option value="4-speed">4-speed</option>
+      <option value="Manual">Manual</option>
+      <option value="BLDC hub motor">BLDC hub motor</option>
+      <option value="6-speed quickshifter">6-speed quickshifter</option>
+      <option value="4-speed constant mesh">4-speed constant mesh</option>
+      <option value="Single Speed">Single Speed</option>
+      <option value="CVT automatic">CVT automatic</option>
+    </select><br>
+
+    
+
+    <label for="drivetrain">Drivetrain:</label>
+    <select id="drivetrain" name="drivetrain" required>
+      <option value="Chain">Chain</option>
+      <option value="Chain drive">Chain drive</option>
+      <option value="Automatic">Automatic</option>
+      <option value="Belt drive">Belt drive</option>
+      <option value="Electric">Electric</option>
+      <option value="Shaft drive">Shaft drive</option>
+      <option value="CVT">CVT</option>
+      <option value="Shaft">Shaft</option>
+      <option value="Belt">Belt</option>
+      <option value="Front wheel drive">Front wheel drive</option>
+      <option value="Front Suspension">Front Suspension</option>
+      <option value="Single-gear">Single-gear</option>
+      <option value="Rear wheel">Rear wheel</option>
+      <option value="4-stroke">4-stroke</option>
+    </select><br>
+    
+
+    <label for="seating">Number of Seating:</label>
+    <!-- <div>
+      <button type="button" name="seating" value="1">1</button>
+      <button type="button" name="seating" value="2">2</button>
+      <button type="button" name="seating" value="3">3</button>
+    </div><br> -->
+    <input type="number" id="seating" name="seating" required><br>
+
+    <label for="year">Year:</label>
+    <select id="year" name="year" required>
+      <option value="1998">1998</option>
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+      <option value="2004">2004</option>
+      <option value="2005">2005</option>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2013</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>      
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+    </select><br>
+
+
+    <label for="looks">Looks:</label>
+    <select id="looks" name="looks" required>
+      <option value="Modern">Modern</option>
+      <option value="Classy">Classy</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Sporty">Sporty</option>
+      <option value="Retro">Retro</option>
+      <option value="Classic">Classic</option>
+      <option value="Futuristic">Futuristic</option>
+      <option value="vintage">vintage</option>
+      <option value="aggressive">aggressive</option>
+      <option value="Commuter">Commuter</option>
+      <option value="Practical">Practical</option>
+      <option value="Naked">Naked</option>
+      <option value="Race-inspired">Race-inspired</option>
+      <option value="bobber">bobber</option>
+      <option value="Bold">Bold</option>
+      <option value="cruiser">cruiser</option>
+      <option value="Budget">Budget</option>
+      <option value="off-road'">off-road</option>
+      <option value="touring">touring</option>
+      <option value="beginner-friendly">beginner-friendly</option>
+    </select><br>
+    <!-- <input type="text" id="looks" name="looks" required><br> -->
+
+    <label for="bodytype">Body Type:</label>
+    <select id="bodytype" name="bodytype" required>
+      <option value="Naked">Naked</option>
+      <option value="Scooter">Scooter</option>
+      <option value="Enduro">Enduro</option>
+      <option value="Standard">Standard</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Cafe racer">Cafe racer</option>
+      <option value="Scrambler">Scrambler</option>
+      <option value="aggressive">aggressive</option>
+      <option value="Street">Street</option>
+      <option value="Roadster">Roadster</option>
+      <option value="Adventure touring">Adventure touring</option>
+      <option value="Sportbike">Sportbike</option>
+      <option value="Street Bike">Street Bike</option>
+      <option value="Superbike">Superbike</option>
+      <option value="Tourer">Tourer</option>
+      <option value="Classic">Classic</option>
+      <option value="Mountain bike:">Mountain bike':</option>
+      <option value="Cargo">Cargo</option>
+      <option value="Tracker">Tracker</option>
+    </select><br>
+
+    <!-- <input type="text" id="bodytype" name="bodytype" required><br> -->
+
+    <label for="enginetype">Engine Type:</label>
+    <select id="enginetype" name="enginetype" required>
+      <option value="Air-Cooled">Air-Cooled</option>
+      <option value="Electric">Electric</option>
+      <option value="V-twin">V-twin</option>
+      <option value="Single-cylinder, liquid-cooled">Single-cylinder, liquid-cooled</option>
+      <option value="Parallel-twin">Parallel-twin</option>
+      <option value="3-cylinder">3-cylinder</option>
+      <option value="Four-stroke">Four-stroke</option>
+      <option value="Air Cooled, Single Cylinder, 4-Stroke">Air Cooled, Single Cylinder, 4-Stroke</option>
+      <option value="2-stroke">2-stroke</option>
+      <option value="Two-stroke">Two-stroke</option>
+      <option value="V-twin, liquid-cooled">V-twin, liquid-cooled</option>
+      <option value="1-cylinder">1-cylinder</option>
+      <option value="Air-Cooled, Single-Cylinder">Air-Cooled, Single-Cylinder</option>
+      <option value="Air-cooled, 4-stroke, single-cylinder, BS6">Air-cooled, 4-stroke, single-cylinder, BS6</option>
+      <option value="V4">V4</option>
+      <option value="In-line-four">In-line-four</option>
+      <option value="Parallel twin">Parallel twin</option>
+      <option value="Triple">Triple</option>
+      
+    </select><br>
+    
+    <!-- <input type="text" id="enginetype" name="enginetype" required><br> -->
+
+    <input type="submit" value="Submit">
+
+    <h4><strong>Your Bike Price will be: <b> {{ prediction }} /- Rs.</b> Only </strong></h4>
+  </form>
+</body>
+</html>
